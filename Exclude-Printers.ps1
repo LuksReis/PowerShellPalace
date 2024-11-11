@@ -4,8 +4,6 @@
 $Printer = Get-Printer | where {
     (
     $_.Name -NotMatch "PullPrint" -and
-    $_.Name -NotMatch "IMP-TORRE02-COLORIDA-ADM" -and
-    $_.Name -NotMatch "IMP-TORRE02-COLORIDA-PRODUCAO" -and
     $_.Name -NotMatch "Fax" -and
     $_.Name -NotMatch "Microsoft Print to PDF" -and
     $_.Name -NotMatch "Microsoft XPS Document Writer" -and
