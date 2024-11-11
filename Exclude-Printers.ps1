@@ -1,5 +1,5 @@
-﻿# Created by: Lucas Reis - lucas.reis@syngenta.com
-# ---- Exclude printers
+﻿# Created by: Lucas Reis - lmarioreis@gmail.com
+# ---- Exclude printers with exceptions
 
 $Printer = Get-Printer | where {
     (
@@ -18,14 +18,3 @@ $Printer = Get-Printer | where {
 }
 
 if($Printer){Remove-Printer -InputObject $Printer}
-
-ETIQUETA-TORRE02-ADM
-ETIQUETA-TORRE02-PRODUCAO
-
-IMP-TORRE02-COLORIDA-ADM
-IMP-TORRE02-COLORIDA-PRODUCAO
-
-
-$Printer = Get-Printer
-
-$Printer.DriverName -match "PCL"
