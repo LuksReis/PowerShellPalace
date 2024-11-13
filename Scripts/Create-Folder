@@ -1,2 +1,6 @@
-$NewPath = "C:\Windows\Dashboard Computers" # The name of folder here
-if(-not(Test-path $NewPath)){    New-Item -ItemType Directory -Path $NewPath | Out-Null    }
+#┌───────────────────────────────────────────────────────────────────────────────┐
+#│ Created By: lmarioreis@gmail.com                                              │
+#└───────────────────────────────────────────────────────────────────────────────┘
+
+$NewPath = "C:\Windows\Dashboard Computers" # Use this variable with the name of folder
+if(-not(Test-path $NewPath)){    New-Item -ItemType Directory -Path $NewPath | Out-Null    } # If not exist will be created
