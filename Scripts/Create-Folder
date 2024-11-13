@@ -1,5 +1,6 @@
 #┌───────────────────────────────────────────────────────────────────────────────┐
-#│ Created By: lmarioreis@gmail.com                                              │
+#│ Created By   : Lucas Reis                                                     │
+#│ Contact      : lmarioreis@gmail.com                                           │
 #└───────────────────────────────────────────────────────────────────────────────┘
 
 $NewPath = "C:\Windows\Dashboard Computers" # Use this variable with the name of folder
