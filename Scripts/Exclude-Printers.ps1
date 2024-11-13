@@ -1,5 +1,7 @@
-﻿# Created by: Lucas Reis - lmarioreis@gmail.com
-# ---- Exclude printers with exceptions
+#┌───────────────────────────────────────────────────────────────────────────────┐
+#│ Created By   : Lucas Reis                                                     │
+#│ Contact      : lmarioreis@gmail.com                                           │
+#└───────────────────────────────────────────────────────────────────────────────┘
 
 $Printer = Get-Printer | where {
     (
