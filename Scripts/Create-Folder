@@ -1,0 +1,2 @@
+$NewPath = "C:\Windows\Dashboard Computers" # The name of folder here
+if(-not(Test-path $NewPath)){    New-Item -ItemType Directory -Path $NewPath | Out-Null    }
