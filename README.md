@@ -13,9 +13,7 @@ PS C:\> Set-ExecutionPolicy Bypass
 
 <h2>Admin Permissions</h2>
 
-When creating scripts that perform system-level operations such as modifying registry keys, installing programs, or making other significant changes to the system, you must run these scripts with administrative privileges. Here's a more accurate version:
-
-Some scripts you create may need to modify registry keys, install programs, or make other system-level changes. In these cases, you must execute your script as an Administrator. To do this:
+When creating scripts that perform system-level operations such as modifying registry keys, installing programs, or making other significant changes to the system, you must run these scripts with administrative privileges. 
 
 1. Right-click on the PowerShell icon
 2. Select "Run as Administrator"
