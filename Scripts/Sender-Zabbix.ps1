@@ -3,6 +3,8 @@
 #│ Contact      : lmarioreis@gmail.com                                           │
 #└───────────────────────────────────────────────────────────────────────────────┘
 
+# You can find Zabbix Template to test here: https://github.com/LuksReis/PowerShellPalace/blob/main/Other/TemplateZabbix-PowerShellSender.yaml
+
 #┌───────────────────────────────────────────────────────────────────────────────┐
 #│ EXAMPLE of PowerShell Zabbix Sender                                           │
 #└───────────────────────────────────────────────────────────────────────────────┘
