@@ -8,7 +8,7 @@
 <p>By default, if you have never executed a PowerShell script before, you need to enable script execution by changing the execution policy. You can do this using the following command:</p>
 
 ```powershell
-PS C:\> Set-ExecutionPolicy Bypass
+Set-ExecutionPolicy Bypass
 ````
 
 <h2>Admin Permissions</h2>
@@ -23,3 +23,5 @@ Alternatively, you can start a PowerShell session with elevated privileges from 
 
 ```powershell
 Start-Process PowerShell -Verb RunAs
+````
+
