@@ -25,3 +25,6 @@ Alternatively, you can start a PowerShell session with elevated privileges from 
 Start-Process PowerShell -Verb RunAs
 ````
 
+<h2>Lets GO!</h2>
+
+You can go to scripts here: [PowerShellPalace](https://github.com/LuksReis/PowerShellPalace/tree/main/Scripts)
