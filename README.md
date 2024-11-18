@@ -4,7 +4,7 @@
 
 <h2>Enabling Script Execution</h2>
 
-<p>You can create .ps1 files [Powershell Scripts] using <img src="https://img.shields.io/badge/PowerShell%20ISE-5391FE" /> and <img src="https://img.shields.io/badge/Visual%20Studio%20Code-8A2BE2" /> </p>
+<p>You can create .ps1 files [Powershell Scripts] using <img src="https://img.shields.io/badge/PowerShell%20ISE-5391FE" /> and/or <img src="https://img.shields.io/badge/Visual%20Studio%20Code-8A2BE2" /> </p>
 <p>By default, if you have never executed a PowerShell script before, you need to enable script execution by changing the execution policy. You can do this using the following command:</p>
 
 ```powershell
