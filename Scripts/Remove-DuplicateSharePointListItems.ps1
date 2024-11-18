@@ -25,8 +25,6 @@ if (-not(Test-Connection 8.8.8.8 -Quiet)) {exit}
 #│ Here we use Rest method to interact with sharepoint list                      │
 #└───────────────────────────────────────────────────────────────────────────────┘
 
-$Global:configXML             = "C:\Program Files\SharepointCustomManagement\Settings\Config.xml"
-
 $Global:ConfigXMLClientID     = "" # Client ID
 $Global:ConfigXMLClientSecret = "" # Client Secret
 $Global:ConfigXMLSiteUrl      = "" # Sharepoint
