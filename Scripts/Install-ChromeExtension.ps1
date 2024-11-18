@@ -8,7 +8,6 @@
 #│ Ex.: https://chromewebstore.google.com/detail/auto-refresh-plus-page-mo/hgeljhfekpckiiplhkigfehkdpldcggm          │
 #│ Id is last code on PATH https://chromewebstore.google.com/detail/auto-refresh-plus-page-mo/*******************    │
 #└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-
 $extensionId = "hgeljhfekpckiiplhkigfehkdpldcggm"
 
 #┌───────────────────────────────────────────────────────────────────────────────┐
@@ -23,7 +22,6 @@ if (!(Test-Path $registryPath)) {
     New-Item -Path $registryPath -Force | Out-Null
 }
 
-# Obter o próximo número disponível para a nova entrada
 $nextNumber = 1
 while (Get-ItemProperty -Path $registryPath -Name $nextNumber -ErrorAction SilentlyContinue) {
     $nextNumber++
@@ -32,5 +30,4 @@ while (Get-ItemProperty -Path $registryPath -Name $nextNumber -ErrorAction Silen
 #┌───────────────────────────────────────────────────────────────────────────────┐
 #│  Add ID on registry                                                           │
 #└───────────────────────────────────────────────────────────────────────────────┘
-
 New-ItemProperty -Path $registryPath -Name $nextNumber -Value "$extensionId;https://clients2.google.com/service/update2/crx" -PropertyType STRING -Force
