@@ -10,7 +10,7 @@ Import-Module ActiveDirectory -ErrorAction SilentlyContinue
 
 # Get computer Distinguished Name
 
-$computerName = Get-ADComputer -Identity $computer -server latam.syngenta.org -Properties * -ErrorAction SilentlyContinue
+$computerName = Get-ADComputer -Identity $computer -Properties * -ErrorAction SilentlyContinue
 
 # Get bitlocker infos
 $recoveryObjects = Get-ADObject -Filter { objectClass -eq "msFVE-RecoveryInformation" } -SearchBase $computerName.DistinguishedName -Server latam.syngenta.org -Properties msFVE-RecoveryGuid, msFVE-RecoveryPassword -ErrorAction SilentlyContinue
