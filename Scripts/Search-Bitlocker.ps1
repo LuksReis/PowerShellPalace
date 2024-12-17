@@ -23,7 +23,7 @@ System.String. Returns a string with Json format
 
 .EXAMPLE
 
-PS> Search-Bitlocker BRASL6VJR7W3
+PS> Search-Bitlocker MFHRT849354F
 
 {
     "ElapsedTime":  "00:00:09.3146132",
