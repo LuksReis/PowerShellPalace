@@ -5,10 +5,49 @@
 
 function Search-Bitlocker {
 
+<#
+.SYNOPSIS
+
+Search bitlocker password key of computer on AD by HOSTNAME. >>>>>> get-help Search-Bitlocker -examples
+
+.DESCRIPTION
+
+Search bitlocker password key of computer on AD.
+
+.PARAMETER computer
+Specifies the HOSTNAME of computer.
+
+.OUTPUTS
+
+System.String. Returns a string with Json format
+
+.EXAMPLE
+
+PS> Search-Bitlocker BRASL6VJR7W3
+
+{
+    "ElapsedTime":  "00:00:09.3146132",
+    "Hostname":  "MFHRT849354F",
+    "RecoveryKeys":  [
+                         {
+                             "RecoveryKeyID":  "########-####-####-####-########",
+                             "Password":  "######-######-######-######-######-######-######-######"
+                         },
+                         {
+                             "RecoveryKeyID":  "########-####-####-####-########",
+                             "Password":  "######-######-######-######-######-######-######-######"
+                         }
+                     ]
+}
+
+.LINK
+
+https://github.com/LuksReis/PowerShellPalace/blob/main/Scripts/Search-Bitlocker.ps1
+
+#>
+
     param (        [string]$computer    )
-
-############
-
+    
 $Start = Get-Date
 
 Import-Module ActiveDirectory -ErrorAction SilentlyContinue
